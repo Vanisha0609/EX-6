@@ -26,7 +26,7 @@ CLIENT:
 import socket
 from pythonping import ping
 s=socket.socket()
-s.bind(('localhost'8000))
+s.bind(('localhost',8000))
 s.listen(5)
 c,addr=s.accept()
 while True:
